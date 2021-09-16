@@ -30,3 +30,5 @@ if(navigator.serviceWorker) {
         .catch(err => console.error('service worker NON enregistré', err));
 }
 
+
+
