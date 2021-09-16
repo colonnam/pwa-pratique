@@ -1,4 +1,3 @@
-	
 const technosDiv = document.querySelector('#technos');
  
 function loadTechnologies(technos) {
@@ -21,5 +20,13 @@ function loadTechnologies(technos) {
         })
         .catch(console.error);
 }
- 
+
 loadTechnologies(technos);
+
+	
+if(navigator.serviceWorker) {
+    navigator.serviceWorker
+        .register('sw.js')
+        .catch(err => console.error('service worker NON enregistré', err));
+}
+
