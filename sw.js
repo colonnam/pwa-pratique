@@ -38,9 +38,6 @@ self.addEventListener('activate', (evt) => {
     evt.waitUntil(cacheCleanPromise);
 });
 
-	
-	
-//..
 self.addEventListener('fetch', (evt) => {
 
     // 5.3 Stratégie de network first with cache fallback
